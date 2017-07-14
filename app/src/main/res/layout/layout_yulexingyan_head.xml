@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+
+    <RadioButton
+        android:checked="true"
+        android:id="@+id/daTuRB"
+        android:textColor="@color/selector_bottom_navigation_item_color"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:button="@null"
+        android:gravity="center"
+        android:text="大图" />
+
+    <RadioButton
+        android:id="@+id/xiaoTuRB"
+        android:textColor="@color/selector_bottom_navigation_item_color"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:button="@null"
+        android:gravity="center"
+        android:text="小图" />
+</RadioGroup>

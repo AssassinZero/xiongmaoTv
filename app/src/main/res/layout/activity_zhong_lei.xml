@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ycsxt.admin.xiongmaotv.view.SwipBackLayout xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/swip"
+    android:background="#fff"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<LinearLayout
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_zhong_lei"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.ycsxt.admin.xiongmaotv.ZhongLeiActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:background="#fff"
+        android:padding="5dp">
+
+        <ImageView
+            android:onClick="back"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/ico_return_normal" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="频道选择"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:id="@+id/continer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#f0f1f3">
+<FrameLayout
+    android:id="@+id/group"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="#fff"
+                android:padding="10dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="常用频道"
+                    android:textSize="20sp" />
+
+                <com.ycsxt.admin.xiongmaotv.view.SuperRecyclerView
+                    android:id="@+id/dragrecycler"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"></com.ycsxt.admin.xiongmaotv.view.SuperRecyclerView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:padding="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:background="#fff"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="所有频道"
+                    android:textSize="20sp" />
+
+                <com.ycsxt.admin.xiongmaotv.view.SuperRecyclerView
+                    android:id="@+id/allrecycler"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"></com.ycsxt.admin.xiongmaotv.view.SuperRecyclerView>
+            </LinearLayout>
+        </LinearLayout>
+</FrameLayout>
+    </ScrollView>
+</LinearLayout>
+</com.ycsxt.admin.xiongmaotv.view.SwipBackLayout>

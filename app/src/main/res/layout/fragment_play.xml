@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <SurfaceView
+        android:id="@+id/sufaceView"
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:paddingTop="@dimen/statusBarHeight">
+
+        <RelativeLayout
+            android:id="@+id/warp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/circle"
+            android:paddingRight="10dp">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/headIv"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_centerVertical="true" />
+
+            <TextView
+                android:id="@+id/nikeName1Tv"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/headIv"
+                android:gravity="center"
+                android:textColor="#fff"
+                android:textSize="18sp" />
+
+
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/guanZhuBtn"
+            android:layout_width="50dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/warp"
+            android:background="@drawable/shape_guanzhu"
+            android:gravity="center"
+
+            android:text="关注"
+            android:textColor="#fff"
+            android:textSize="16sp" />
+
+        <com.ycsxt.admin.xiongmaotv.view.SuperRecyclerView
+            android:id="@+id/liebiao"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/guanZhuBtn"></com.ycsxt.admin.xiongmaotv.view.SuperRecyclerView>
+    </RelativeLayout>
+
+    <TextSwitcher
+        android:id="@+id/welcomeTv"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="50dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="asdasdas"
+            android:textColor="#fff"
+            android:textSize="18sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="asdasdas"
+            android:textColor="#fff"
+            android:textSize="18sp" />
+    </TextSwitcher>
+
+    <ImageView
+
+        android:id="@+id/markIv"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:scaleType="centerCrop" />
+</RelativeLayout>

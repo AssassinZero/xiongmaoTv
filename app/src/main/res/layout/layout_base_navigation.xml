@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:id="@+id/baseGroup"
+    android:layout_height="match_parent">
+<com.ycsxt.admin.xiongmaotv.view.XiongMaoToolBar
+    android:id="@+id/xiongMaoToolBar"
+    android:layout_width="match_parent"
+    android:background="#fff"
+    android:padding="5dp"
+    android:layout_height="45dp"></com.ycsxt.admin.xiongmaotv.view.XiongMaoToolBar>
+
+</LinearLayout>

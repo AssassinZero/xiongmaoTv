@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <android.support.design.widget.TabLayout
+            android:id="@+id/tab"
+            android:background="#fff"
+            app:tabGravity="fill"
+            app:tabMode="scrollable"
+            android:layout_width="0dp"
+            android:overScrollMode="never"
+            app:tabIndicatorColor="#1ed39c"
+            android:layout_height="?actionBarSize"
+            android:layout_weight="1"></android.support.design.widget.TabLayout>
+        <ImageView
+            android:id="@+id/shouyeAdd"
+            android:src="@mipmap/shouye_icon_tianjia"
+            android:background="#fff"
+            android:layout_width="?actionBarSize"
+            android:layout_height="?actionBarSize" />
+    </LinearLayout>
+    <android.support.v4.view.ViewPager
+        android:id="@+id/shouyePager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></android.support.v4.view.ViewPager>
+</LinearLayout>

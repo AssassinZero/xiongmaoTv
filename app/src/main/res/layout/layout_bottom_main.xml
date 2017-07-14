@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:paddingTop="5dp"
+    android:layout_alignParentBottom="true"
+    android:background="#f5f5f5"
+    android:orientation="horizontal"
+    tools:showIn="@layout/activity_main">
+
+    <RadioButton
+        android:checked="true"
+        android:id="@+id/shouyeRB"
+        style="@style/Navigation_Bottom_Item_Style"
+        android:drawableTop="@drawable/selector_bottom_navigation_item_shouye"
+        android:text="首页" />
+
+    <RadioButton
+        android:id="@+id/youxiRB"
+        style="@style/Navigation_Bottom_Item_Style"
+        android:drawableTop="@drawable/selector_bottom_navigation_item_youxi"
+
+        android:text="游戏" />
+
+    <RadioButton
+        android:id="@+id/yuleRB"
+        style="@style/Navigation_Bottom_Item_Style"
+        android:drawableTop="@drawable/selector_bottom_navigation_item_yule"
+        android:text="娱乐" />
+
+    <RadioButton
+        android:id="@+id/wodeRB"
+        style="@style/Navigation_Bottom_Item_Style"
+        android:drawableTop="@drawable/selector_bottom_navigation_item_wode"
+        android:text="我的" />
+</RadioGroup>
